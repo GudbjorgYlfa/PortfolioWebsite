@@ -13,8 +13,8 @@ body, html {
   /* Header */
 
 header {
-	/* width: 100vw; */
-	height: 100%;
+    height: 50vh;
+    margin-bottom: 20px;
   }
 
 /* header .mobileView img {
@@ -24,7 +24,7 @@ header {
 
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url("../img/Image1.jpg");
-  height: 50%;
+  height: 100%;
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -96,19 +96,48 @@ main {
     background: lightgrey;
 }
 
+.flexbox {
+    width: 100%;
+    display: flex;
+	flex-direction: column;
+	justify-content: center;
+    align-items: center;
+}
+
+.cards {
+    width: 80vw;
+    height: 50%;
+    padding: 10px;
+    margin: 10px;
+    flex: 25%;
+}
+
+.card1 {
+    background-color: thistle;
+    margin-bottom: 10px;
+}
+
+.card2 {
+    background-color: teal;
+    margin-bottom: 10px;
+}
+
+.card3 {
+    background-color:steelblue;
+    margin-bottom: 10px;
+}
+
 
 /* Contact Form */
 
 .contactForm {
-    width: 300px;
+    width: 250px;
     height: 100%;
     background-color: rgb(243, 243, 243);
     border-radius: 6px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    padding: 25px;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin: auto;
+    padding: 10px;
+  
 }
 
 
@@ -143,3 +172,25 @@ input[type="submit"]:hover {
   }
 
   /* Contact form ends */
+
+.blockElement {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.linksCentered {
+    display: inline-block;
+    /* width: 80vw; */
+    margin: auto;
+    padding: 10px;
+}
+
+#textalign,
+#icon {
+  line-height: 50px;
+}
+#icon {
+  vertical-align: middle;
