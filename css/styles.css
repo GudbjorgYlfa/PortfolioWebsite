@@ -1,0 +1,145 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body, html {
+    /* width: 100%; */
+    height: 100%;
+    margin: 0;
+}
+
+  /* Header */
+
+header {
+	/* width: 100vw; */
+	height: 100%;
+  }
+
+/* header .mobileView img {
+	width: 90vw;
+	height: 60px;
+  } */
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url("../img/Image1.jpg");
+  height: 50%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  /* background-attachment: fixed; */
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+h1 {
+    line-height: 2.5rem;
+    padding-bottom: 20px;
+}
+
+p {
+    line-height: 1.5rem;
+    padding-bottom: 20px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+nav {
+    position: absolute;
+    right: 0;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+    margin-right: 5%
+}
+
+i {
+    padding-right: 5px;
+}
+
+.aboutme {
+    width: 80vw;
+    margin: auto;
+    padding: 10px;
+    text-align: justify;
+}
+
+button {
+    color:white;
+    background-color: rgba(169, 169, 169, 0.445);
+    box-shadow: rgba(41, 41, 41, 0.027) 0px 7px 29px 0px;
+    border: none;
+    border-radius: 3px;
+    padding: 8px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+main {
+    background: lightgrey;
+}
+
+
+/* Contact Form */
+
+.contactForm {
+    width: 300px;
+    height: 100%;
+    background-color: rgb(243, 243, 243);
+    border-radius: 6px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 25px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+
+input {
+    width: 100%;
+    padding: 10px 16px 10px 16px;
+    border-radius: 5px;
+    margin: 8px 0px;
+    border-color: rgb(243, 243, 243);
+    border:none;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px 8px 16px 16px;
+    border-radius: 5px;
+    resize: none;
+    margin: 8px 0px;
+    border-color: rgb(243, 243, 243)
+}
+
+
+input[type="submit"] {
+    background-color: #1ac0f3;
+    color: white;
+    padding: 14px 20px;
+    cursor: pointer;
+  }
+  
+input[type="submit"]:hover {
+    background-color: lightskyblue;
+  }
+
+  /* Contact form ends */
