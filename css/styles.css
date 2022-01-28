@@ -94,7 +94,7 @@ nav i:hover {
 button {
     color:white;
     background-color: rgba(169, 169, 169, 0.445);
-    box-shadow: rgba(41, 41, 41, 0.027) 0px 7px 29px 0px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
     border: none;
     border-radius: 3px;
     padding: 8px;
@@ -275,7 +275,6 @@ input[type="submit"]:hover {
 
     #desktopView {
         display: inline-block;
-        /* width: 960px; */
         padding: 10px;
         margin: 20px;
         align-items: center;
@@ -294,10 +293,12 @@ input[type="submit"]:hover {
         display: flex;
         flex-direction: row;
         /* float: left; */
-        justify-content: left; 
-        width: 600px;
+        justify-content: space-evenly; 
+        /* width: 600px; */
         padding-bottom: 50px;
         margin-top: 30px;
+        margin-right: 10vw;
+        margin-left: 10vw;
     }
 
     #mobileView {
@@ -322,9 +323,7 @@ input[type="submit"]:hover {
 
     .linksCentered {
         display: block;
-        /* margin: auto; */
         padding: 10px;
-        float: right;
     }
     
     #textalign,
@@ -335,12 +334,46 @@ input[type="submit"]:hover {
       vertical-align: middle;
     }
 
+    .flexbox2 img {
+        /* margin: auto; */
+        opacity: 0.4;
+        margin-top: 10px;
+    }
+
   }
 
 
 
 
 /* Ipad View */
-  @media screen {min-width: 40em;
+  @media screen and (min-width: 40em) and (max-width: 59em){
+
+  .flexbox {
+    display: inline-block;
+    margin: auto;
+    justify-content:space-between;
+    align-items: center; 
+    padding: 0 40px 0 40px;
+}
+
+.cards {
+    width: 40vw;
+    height: 50%;
+    /* margin: 10px; */
+    padding: 1vw;
+    /* margin-left: 20px; */
+    float: left;
+    flex-direction: row;
+    border-radius: 0 0 10px 0;
+}
+
+.contactForm {
+    width: 40vw; 
+    margin-top: 3vh;
+}
+
+.linksCentered {
+    margin-bottom: 1vh;
+}
       
   }
