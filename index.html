@@ -18,11 +18,33 @@
 
     <div class="hero-image">
 
-        <nav>
+        <!-- Top Navigation Menu -->
+<div id="mobileView" class="topnav">
+    <a href="#home" class="active">Gudbjorg Ylfa</a>
+    <!-- Navigation links (hidden by default) -->
+    <div id="myLinks">
+      <a href="#portfolio">Portfolio</a>
+      <a href="#about">About</a>
+      <a href="#Contact">Contact</a>
+    </div>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+        <nav id="desktopViewNavbar">
+            <ul>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class="icons">
             <i class="fa fa-instagram fa-2x"></i>
             <i class="fa fa-github fa-2x"></i>
             <i class="fa fa-linkedin fa-2x"></i>
-            
+            </div>
         </nav>
         
         <section class="mobileView">
@@ -140,7 +162,7 @@
 
             
         </section>
-        
+     <script src="./app.js"></script>   
     </main>
     <footer>
 

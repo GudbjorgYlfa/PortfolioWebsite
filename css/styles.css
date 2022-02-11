@@ -9,10 +9,11 @@ body, html {
     margin: 0;
 }
 
+
   /* Header */
 
 header {
-    height: 50vh;
+    height: 60vh;
     margin-bottom: 20px;
   }
 
@@ -60,24 +61,47 @@ img .hero-image{
     height: auto;
 }
 
-nav {
+.topnav {
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.329);
+    position: relative;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: rgba(0, 0, 0, 0.329);
+    display: block;
     position: absolute;
     right: 0;
-    color: rgba(255, 255, 255, 0.8);
-    padding: 10px;
-    display: inline-block;
-    margin-right: 2%;
-    margin-top: 1%;
-}
-
-i {
-    padding-right: 10px;
-}
-
-nav i:hover {
+    top: 0;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: rgba(221, 221, 221, 0.233);
+    color: black;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: rgba(0, 0, 0, 0.116);
     color: white;
-    cursor: pointer;
-}
+  }
+
 
 .aboutme {
     width: 80vw;
@@ -241,6 +265,10 @@ input[type="submit"]:hover {
     display: none;
 }
 
+#desktopViewNavbar {
+    display: none;
+}
+
 
 /* Desktop View  */
 @media screen and (min-width: 60em) {
@@ -340,7 +368,61 @@ input[type="submit"]:hover {
         margin-top: 10px;
     }
 
+    /* Navbar */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
   }
+
+li {
+    float: left;
+    padding: 0 10px 0 10px;
+    font-size: 18px;
+  }
+  
+ul li a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+ul li a:hover {
+    color: white;
+    cursor: pointer;
+    background-color: rgba(146, 146, 146, 0.185);
+}
+
+
+nav, #desktopViewNavbar {
+    color: rgba(255, 255, 255, 0.8);
+    padding: 5px 8px;
+    display: flex;
+    margin-right: 2%;
+    margin-top: 1%;
+    background-color: rgba(0, 0, 0, 0.329);
+    justify-content: right;
+    width: 100%;
+}
+
+.icons {
+    padding-left: 40px;
+}
+
+i {
+    padding-right: 10px;
+    right: 0;
+}
+
+nav i:hover {
+    color: white;
+    cursor: pointer;
+}
+
+}
 
 
 
@@ -374,6 +456,10 @@ input[type="submit"]:hover {
 
 .linksCentered {
     margin-bottom: 1vh;
+}
+
+#desktopViewNavbar {
+    display: none;
 }
       
   }
